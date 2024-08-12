@@ -151,7 +151,7 @@ def perform_risk_assessment(selected_threats, user_responses, threats_data, cont
         likelihood_level = map_to_qualitative(likelihood_residue)
 
         # Determine Qualitative Risk
-        if impact_residue == 0 and likelihood_residue == 0:
+        if impact_residue == 0 or likelihood_residue == 0:
             qualitative_risk = "No Risk"
         else:
             qualitative_risk = qualitative_risk_matrix.get((impact_level, likelihood_level))
@@ -179,7 +179,7 @@ def perform_risk_assessment(selected_threats, user_responses, threats_data, cont
     }
         return color_map.get(val, "")
 
-    styled_df = results_df.style.applymap(color_code_risk, subset=["Qualitative Risk"])
+    styled_df = results_df.style.map(color_code_risk, subset=["Qualitative Risk"])
 
     return styled_df
 
