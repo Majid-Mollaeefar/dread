@@ -1,0 +1,249 @@
+{
+    "Controls": {
+        "C1": {
+            "Mitigation Level": {
+                "Basic": "Logs with timestamps for critical events.",
+                "Intermediate": "Encrypted logs stored locally.",
+                "Advanced": "Logs are encrypted and securely transmitted to a centralized logging server with automated anomaly detection and alerting system."
+            }
+        },
+        "C2": {
+            "Mitigation Level": {
+                "Basic": "Manual separation of roles and responsibilities.",
+                "Intermediate": "Role-Based Access Control (RBAC) implementation.",
+                "Advanced": "Multi-signature requirements for critical actions."
+            }
+        },
+        "C3": {
+            "Mitigation Level": {
+                "Basic": "Use of username and password for identity verification.",
+                "Intermediate": "Incorporation of two-factor authentication (2FA): e.g., username and password with OTP (One Time Password) or Biometric verification (e.g., fingerprint or facial recognition).",
+                "Advanced": "Integration of phishing-resistant hardware-based authentication (e.g., security keys) and continuous identity verification mechanisms."
+            }
+        },
+        "C4": {
+            "Mitigation Level": {
+                "Basic": "Storing private keys and sensitive information in encrypted form on the device.",
+                "Intermediate": "Use of software-based secure storage areas within the operating system, like TEE.",
+                "Advanced": "Deployment of hardware-based secure storage on the device (e.g., Strongbox/Secure Enclave) or remote hardware-based solutions (HSM) to securely store and process sensitive information."
+            }
+        },
+        "C5": {
+            "Mitigation Level": {
+                "Basic": "Basic DDoS detection and alert system.",
+                "Intermediate": "Use of rate limiting and simple firewall rules to mitigate DDoS attacks. For instance, limiting each IP address to 3 requests per minute.",
+                "Advanced": "Comprehensive DDoS protection solutions including real-time traffic analysis, automated blackhole routing, advanced WAF, and rate limiting mechanisms with AI-driven anomaly detection."
+            }
+        },
+        "C6": {
+            "Mitigation Level": {
+                "Basic": "Manual credential refresh and update are triggered by the Holder and manual revocation processes are initiated by the administrator.",
+                "Intermediate": "Automated refresh and update mechanisms with periodic checks for validity.",
+                "Advanced": "Implementation of a cryptographic-based revocation list (e.g., accumulators) and continuous validation of credentials."
+            }
+        },
+        "C7": {
+            "Mitigation Level": {
+                "Basic": "Credential validation following the best practices that are provided in the relevant standards (e.g., OpenID for Verifiable Credential Presentations)",
+                "Intermediate": "Credential validation following the best practices that are provided in the relevant standards (e.g., OpenID for Verifiable Credential Presentations)",
+                "Advanced": "Credential validation following the best practices that are provided in the relevant standards (e.g., OpenID for Verifiable Credential Presentations)"
+            }
+        },
+        "C8": {
+            "Mitigation Level": {
+                "Basic": "Credential validation using the app installed on the personal device of verifier.",
+                "Intermediate": "Credential validation using a trusted device with outdated software.",
+                "Advanced": "Credential validation using a trusted device with an isolated and tamper-proof environment, the latest OS updates and software, and secure boot mechanisms."
+            }
+        },
+        "C9": {
+            "Mitigation Level": {
+                "Basic": "Ephemeral credentials with short-lived validity periods.",
+                "Intermediate": "Ephemeral credentials with short-lived validity periods.",
+                "Advanced": "Ephemeral credentials with short-lived validity periods."
+            }
+        },
+        "C10": {
+            "Mitigation Level": {
+                "Basic": "Local caching with basic security measures.",
+                "Intermediate": "Secure local caching with encryption.",
+                "Advanced": "Tamper-proof caching with integrity checks and real-time synchronization."
+            }
+        },
+        "C11": {
+            "Mitigation Level": {
+                "Basic": "Manual revocation by contacting the Issuer without request authentication (e.g., answering security questions)",
+                "Intermediate": "Self-service portal for credential revocation hosted by the Issuer with request authentication using MFA.",
+                "Advanced": "Automated revocation through trusted Wallet instance with both wallet instance and user authentication."
+            }
+        },
+        "C12": {
+            "Mitigation Level": {
+                "Basic": "Manual backup of credentials.",
+                "Intermediate": "Automated encrypted backups.",
+                "Advanced": "Tamper-proof and highly secure backup and recovery solution."
+            }
+        },
+        "C13": {
+            "Mitigation Level": {
+                "Basic": "Real-time push notifications via mobile app with a dedicated tab in the app to further check the credential activity.",
+                "Intermediate": "Real-time push notifications via mobile app with a dedicated tab in the app to further check the credential activity.",
+                "Advanced": "Real-time push notifications via mobile app with a dedicated tab in the app to further check the credential activity."
+            }
+        },
+        "C14": {
+            "Mitigation Level": {
+                "Basic": "Official app stores distribution.",
+                "Intermediate": "Official websites and secure distribution channels.",
+                "Advanced": "Official websites with advance security measures (e.g., Certificate Pinning)."
+            }
+        },
+        "C15": {
+            "Mitigation Level": {
+                "Basic": "Basic feedback to users without exposing any sensitive information.",
+                "Intermediate": "Basic feedback to users without exposing any sensitive information.",
+                "Advanced": "Basic feedback to users without exposing any sensitive information."
+            }
+        },
+        "C16": {
+            "Mitigation Level": {
+                "Basic": "Basic training on phishing and social engineering.",
+                "Intermediate": "Regular training sessions and awareness campaigns.",
+                "Advanced": "Simulated phishing and social engineering attacks."
+            }
+        },
+        "C17": {
+            "Mitigation Level": {
+                "Basic": "Restrict access to debug interfaces.",
+                "Intermediate": "Restrict access to debug interfaces.",
+                "Advanced": "Encrypt debug communications."
+            }
+        },
+        "C18": {
+            "Mitigation Level": {
+                "Basic": "TLS without mutual authentication.",
+                "Intermediate": "Encrypted communication with mutual authentication (e.g., mTLS).",
+                "Advanced": "Encrypted communication with mutual authentication (e.g., mTLS) with certificate pinning."
+            }
+        },
+        "C19": {
+            "Mitigation Level": {
+                "Basic": "Implement Wallet Integrity checks with only basic integrity checks.",
+                "Intermediate": "Implement Wallet Integrity checks with device integrity checks in addition to basic integrity.",
+                "Advanced": "Implement Wallet Integrity checks with application integrity in addition to device integrity and basic integrity checks."
+            }
+        },
+        "C20": {
+            "Mitigation Level": {
+                "Basic": "Basic role-based access control (RBAC).",
+                "Intermediate": "Fine-grained access control policies.",
+                "Advanced": "Dynamic and adaptive access control."
+            }
+        },
+        "C21": {
+            "Mitigation Level": {
+                "Basic": "Username and password-based authentication.",
+                "Intermediate": "Multi-factor authentication (MFA) with SMS-based OTP (One-Time Password). Password complexity requirements and expiration policies.",
+                "Advanced": "MFA with biometric authentication or hardware-based token. Adaptive authentication mechanisms (e.g., risk-based authentication)."
+            }
+        },
+        "C22": {
+            "Mitigation Level": {
+                "Basic": "Manual validation of entities based on pre-defined criteria.",
+                "Intermediate": "Automated validation using digital certificates and basic validation protocols (e.g., X.509).",
+                "Advanced": "Advanced validation using PKI (Public Key Infrastructure) and OCSP (Online Certificate Status Protocol) or OpenID Federation."
+            }
+        },
+        "C23": {
+            "Mitigation Level": {
+                "Basic": "Request response verification following the best practices (e.g., signature and data format) and the relevant standards.",
+                "Intermediate": "Request response verification following the best practices (e.g., signature and data format) and the relevant standards.",
+                "Advanced": "Request response verification following the best practices (e.g., signature and data format) and the relevant standards."
+            }
+        },
+        "C24": {
+            "Mitigation Level": {
+                "Basic": "Basic session tokens with time-based expiration.",
+                "Intermediate": "Session tokens bound to user-specific attributes (e.g., IP address, device ID).",
+                "Advanced": "Session tokens with cryptographic binding to the user session and device. Implementation of session timeout policies and session revocation mechanisms."
+            }
+        },
+        "C25": {
+            "Mitigation Level": {
+                "Basic": "Periodic manual audits of system configurations and activities.",
+                "Intermediate": "Automated monitoring with basic alerting mechanisms.",
+                "Advanced": "Comprehensive security information and event management (SIEM) with real-time monitoring, automated responses, and regular detailed audits."
+            }
+        },
+        "C26": {
+            "Mitigation Level": {
+                "Basic": "Basic privacy measures like minimal data collection and anonymization.",
+                "Intermediate": "Implementing privacy-enhancing technologies like data masking and pseudonymization.",
+                "Advanced": "Use of advanced techniques such as differential privacy, zero-knowledge proofs, and homomorphic encryption."
+            }
+        },
+        "C27": {
+            "Mitigation Level": {
+                "Basic": "Fundamental remote wipe capabilities (Manual remote wipe trigger, basic authentication, data deletion).",
+                "Intermediate": "Enhance remote wipe capabilities (Automated triggers, multi-factor authentication, encryption of deleted data, confirmation and logging).",
+                "Advanced": "Comprehensive remote wipe capabilities with advanced security features and automation (Real-time remote wipe, geo-fencing, advanced threat detection, user notifications and recovery options)."
+            }
+        },
+        "C28": {
+            "Mitigation Level": {
+                "Basic": "Simple string comparison.",
+                "Intermediate": "Simple string comparison.",
+                "Advanced": "Simple string comparison."
+            }
+        },
+        "C29": {
+            "Mitigation Level": {
+                "Basic": "Fundamental auditing measures.",
+                "Intermediate": "Enhance auditing measures with automated tools and more detailed anomaly detection.",
+                "Advanced": "Comprehensive and continuous auditing measures with advanced analytics and real-time monitoring."
+            }
+        },
+        "C30": {
+            "Mitigation Level": {
+                "Basic": "Secure data exchange protocol implementation following the best practices defined in the standards.",
+                "Intermediate": "Secure data exchange protocol implementation following the best practices defined in the standards.",
+                "Advanced": "Secure data exchange protocol implementation following the best practices defined in the standards."
+            }
+        },
+        "C31": {
+            "Mitigation Level": {
+                "Basic": "Use of standard cryptographic libraries.",
+                "Intermediate": "Uses cryptographic algorithms certified by recognized standards bodies (e.g., NIST).",
+                "Advanced": "Regularly audits and updates cryptographic implementations to ensure they meet current best practices."
+            }
+        },
+        "C32": {
+            "Mitigation Level": {
+                "Basic": "Binding of holder identity to credentials using claim-based binding.",
+                "Intermediate": "Binding of holder identity to credentials using biometric-based binding.",
+                "Advanced": "Binding of holder identity to credentials using cryptographic-based binding with proof of possession and with optional proof of association binding."
+            }
+        },
+        "C33": {
+            "Mitigation Level": {
+                "Basic": "Implementation of Robust consent mechanism where users must explicitly agree to any data access or transaction.",
+                "Intermediate": "Implementation of Robust consent mechanism where users must explicitly agree to any data access or transaction.",
+                "Advanced": "Implementation of Robust consent mechanism where users must explicitly agree to any data access or transaction."
+            }
+        },
+        "C34": {
+            "Mitigation Level": {
+                "Basic": "Implementation of basic data minimization/selective disclosure methods that enable the user to selectively disclose their attributes. (e.g., selectively disclosable consent pages).",
+                "Intermediate": "Implementation of moderate data minimization/selective disclosure methods based on hiding commitment mechanisms (e.g., SD-JWT).",
+                "Advanced": "Implementation of advance selective disclosure methods based on zero-knowledge proofs."
+            }
+        },
+        "C35": {
+            "Mitigation Level": {
+                "Basic": "Implementation of data deletion policy based on the eIDAS regulation.",
+                "Intermediate": "Implementation of data deletion policy based on the eIDAS regulation.",
+                "Advanced": "Implementation of data deletion policy based on the eIDAS regulation."
+            }
+        }
+    }
+}

@@ -1,0 +1,284 @@
+{
+    "Threats": [
+        {
+            "Code": "T1",
+            "Name": "Theft of sensitive information",
+            "Controls": [
+                {
+                    "Code": "C4",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.12
+                },
+                {
+                    "Code": "C14",
+                    "Overall Weights": 3,
+                    "Normalized Weights": 0.14
+                },
+                {
+                    "Code": "C15",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.10
+                },
+                {
+                    "Code": "C16",
+                    "Overall Weights": 1.5,
+                    "Normalized Weights": 0.07
+                },
+                {
+                    "Code": "C18",
+                    "Overall Weights": 3,
+                    "Normalized Weights": 0.14
+                },
+                {
+                    "Code": "C21",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.10
+                },
+                {
+                    "Code": "C22",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.12
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.12
+                },
+                {
+                    "Code": "C25",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.10
+                }
+            ]
+        },
+        {
+            "Code": "T2",
+            "Name": "Entity impersonation",
+            "Controls": [
+                {
+                    "Code": "C3",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.22
+                },
+                {
+                    "Code": "C16",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.17
+                },
+                {
+                    "Code": "C22",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.22
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.22
+                },
+                {
+                    "Code": "C25",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.17
+                }
+            ]
+        },
+        {
+            "Code": "T3",
+            "Name": "Issuer Abuse",
+            "Controls": [
+                {
+                    "Code": "C2",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.36
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.36
+                },
+                {
+                    "Code": "C25",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.29
+                }
+            ]
+        },
+        {
+            "Code": "T4",
+            "Name": "Use of a stolen credential",
+            "Controls": [
+                {
+                    "Code": "C24",
+                    "Overall Weights": 3,
+                    "Normalized Weights": 0.21
+                },
+                {
+                    "Code": "C9",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.17
+                },
+                {
+                    "Code": "C32",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.17
+                },
+                {
+                    "Code": "C11",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.14
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.17
+                },
+                {
+                    "Code": "C25",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.14
+                }
+            ]
+        },
+        {
+            "Code": "T5",
+            "Name": "Wallet Compromise",
+            "Controls": [
+                {
+                    "Code": "C11",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.22
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.28
+                },
+                {
+                    "Code": "C26",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.22
+                },
+                {
+                    "Code": "C19",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.28
+                }
+            ]
+        },
+        {
+            "Code": "T6",
+            "Name": "Device Loss",
+            "Controls": [
+                {
+                    "Code": "C4",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.25
+                },
+                {
+                    "Code": "C11",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.20
+                },
+                {
+                    "Code": "C21",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.25
+                },
+                {
+                    "Code": "C27",
+                    "Overall Weights": 3,
+                    "Normalized Weights": 0.30
+                }
+            ]
+        },
+        {
+            "Code": "T7",
+            "Name": "Cryptographic key/credential leakage",
+            "Controls": [
+                {
+                    "Code": "C4",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.36
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.36
+                },
+                {
+                    "Code": "C25",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.29
+                }
+            ]
+        },
+        {
+            "Code": "T8",
+            "Name": "Data minimization violation",
+            "Controls": [
+                {
+                    "Code": "C26",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.36
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.36
+                },
+                {
+                    "Code": "C25",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.29
+                }
+            ]
+        },
+        {
+            "Code": "T9",
+            "Name": "Exploit faulty user consent mechanism",
+            "Controls": [
+                {
+                    "Code": "C33",
+                    "Overall Weights": 3,
+                    "Normalized Weights": 0.35
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.29
+                },
+                {
+                    "Code": "C26",
+                    "Overall Weights": 3,
+                    "Normalized Weights": 0.35
+                }
+            ]
+        },
+        {
+            "Code": "T10",
+            "Name": "Illegitimate credential/sensitive data storage",
+            "Controls": [
+                {
+                    "Code": "C34",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.26
+                },
+                {
+                    "Code": "C35",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.26
+                },
+                {
+                    "Code": "C1",
+                    "Overall Weights": 2.5,
+                    "Normalized Weights": 0.26
+                },
+                {
+                    "Code": "C25",
+                    "Overall Weights": 2,
+                    "Normalized Weights": 0.21
+                }
+            ]
+        }
+    ]
+}

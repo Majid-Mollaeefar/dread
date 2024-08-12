@@ -1,0 +1,319 @@
+{
+    "Controls": [
+        {
+            "Code": "C1",
+            "Name": "Secure logging mechanism",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C2",
+            "Name": "Split control scheme (distributes responsibility)",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C3",
+            "Name": "Secure identification of Holders",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "No",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C4",
+            "Name": "Secure storage",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C5",
+            "Name": "DDoS alert, blackhole routing, rate limit, web application firewall",
+            "D": "Yes",
+            "R": "No",
+            "E": "No",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C6",
+            "Name": "Secure credential management (e.g., refresh/update and revocation)",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C7",
+            "Name": "Credential validation",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C8",
+            "Name": "Credential validation using a Verifier trusted device",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C9",
+            "Name": "Use of ephemeral Credentials",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C10",
+            "Name": "Caching of essential data",
+            "D": "Yes",
+            "R": "No",
+            "E": "No",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C11",
+            "Name": "Holder revocation of Credentials",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C12",
+            "Name": "Secure Recovery/Backup mechanism",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "No",
+            "D1": "No"
+        },
+        {
+            "Code": "C13",
+            "Name": "Notification to inform the Holder of any Credential request/obtained",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C14",
+            "Name": "Trusted Wallet sources",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C15",
+            "Name": "Proper error messages",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C16",
+            "Name": "Entity training, education and awareness",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C17",
+            "Name": "Secure debug interfaces",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "No",
+            "D1": "No"
+        },
+        {
+            "Code": "C18",
+            "Name": "Secure communication",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C19",
+            "Name": "General platform security measures",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C20",
+            "Name": "Access control",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "No",
+            "D1": "No"
+        },
+        {
+            "Code": "C21",
+            "Name": "Authentication",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C22",
+            "Name": "Validation of entities",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "No",
+            "D1": "No"
+        },
+        {
+            "Code": "C23",
+            "Name": "Validation of request/response messages",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "No",
+            "D1": "No"
+        },
+        {
+            "Code": "C24",
+            "Name": "Session binding",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C25",
+            "Name": "Regular audits and monitoring",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "Yes"
+        },
+        {
+            "Code": "C26",
+            "Name": "Privacy by design",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C27",
+            "Name": "Remote wipe",
+            "D": "Yes",
+            "R": "No",
+            "E": "No",
+            "A": "No",
+            "D1": "No"
+        },
+        {
+            "Code": "C28",
+            "Name": "aud value in the presentation response",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C29",
+            "Name": "Cybersecurity certification audition",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C30",
+            "Name": "Secure data exchange protocol implementation",
+            "D": "Yes",
+            "R": "No",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C31",
+            "Name": "Secure cryptographic algorithms",
+            "D": "Yes",
+            "R": "No",
+            "E": "No",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C32",
+            "Name": "Holder Binding",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C33",
+            "Name": "Robust Consent Mechanisms",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "Yes",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C34",
+            "Name": "Data Minimization/ Selective disclosure",
+            "D": "Yes",
+            "R": "No",
+            "E": "No",
+            "A": "Yes",
+            "D1": "No"
+        },
+        {
+            "Code": "C35",
+            "Name": "Data Deletion Policies",
+            "D": "Yes",
+            "R": "Yes",
+            "E": "No",
+            "A": "Yes",
+            "D1": "No"
+        }
+    ]
+}
