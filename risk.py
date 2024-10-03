@@ -44,8 +44,7 @@ headers = [
     ("How It Works", "#f3b61f")
 ]
 configure_sidebar(headers)
-# st.sidebar.image(logo_path, width=200)
-# logo_path = "path_to_your_logo.png"  # Replace with the path to your logo image file
+
 
 st.sidebar.image(logo_path, use_column_width=True)
 render_header(0)
@@ -58,20 +57,6 @@ st.sidebar.write("""**D.I.W.A.R.** is an acronym for: **D**igital **I**dentity *
 st.sidebar.write("""**Methodology:** DIWAR is a Control-based Risk Assessment tool designed to evaluate risks associated with various security threats by assessing the effectiveness of implemented controls. Central to this assessment is the **[DREAD model](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model))**, a framework used to quantify, evaluate, and prioritize threats based on DREAD factors.
                  
                  """)
-# st.sidebar.markdown("""
-# **Overview:**
-# DIWAR is a Control-based Risk Assessment tool designed to evaluate risks associated with various security threats by assessing the effectiveness of implemented controls. Central to this assessment is the **DREAD model**, a framework used to quantify, evaluate, and prioritize threats based on five key factors:
-
-# - **Damage Potential (D):** Refers to the potential impact that a vulnerability could have on the target. The target can be the organization, the system in question, or other users in general. It considers how much damage an exploit can cause if it is successfully executed.
-
-# - **Reproducibility (R):** Refers to how easily an attacker can reproduce the vulnerability. This factor assesses the likelihood that an attacker can consistently exploit the vulnerability.
-
-# - **Exploitability (E):** Refers to how easy or difficult it is to exploit the vulnerability. This factor considers the skill level required and the tools or resources needed to exploit the vulnerability.
-
-# - **Affected Users (A):** Refers to the number of users who could be affected by the vulnerability. It evaluates the scope and scale of the potential impact on users if the vulnerability is exploited.
-
-# - **Discoverability (D):** Refers to how easy or difficult it is to discover the vulnerability. This factor assesses the likelihood that the vulnerability will be found by attackers, considering the visibility and accessibility of the vulnerability.
-# """)
 render_header(1)
 # st.sidebar.header("How It Works")
 st.sidebar.write("""
@@ -82,43 +67,22 @@ st.sidebar.write("""
 """)
 st.sidebar.write("---")
 st.sidebar.write("For more information or feedback, contact us at: st-diwar@fbk.eu")
-# with st.sidebar:
-#     _, center, _ = st.columns([0.2, 1, 0.2]) # Columns to center the image
-#     with center:
-#         st.image(logo_path, width=200)
-#         # logo_path = "path_to_your_logo.png"  # Replace with the path to your logo image file
-#         # st.sidebar.image(logo_path, use_column_width=True)
-#         st.sidebar.header("About the D.I.W.A.R")
-#         st.sidebar.write("""
-#         The **Threat Risk Assessment Tool** helps evaluate and calculate risks associated with different roles in the context of a "Digital Identity Wallet" ecosystem. It assesses the relevant threats for each role and suggests mitigation controls based on the selected role's responsibilities.
-#         """)
-#         st.sidebar.header("How It Works")
-#         st.sidebar.write("""
-#         1. **Select a Role**: Choose a role from the dropdown to view relevant threats and controls.
-#         2. **Threat Assessment**: The tool lists all threats and controls that affect the selected role.
-#         3. **Control Selection**: Choose the level of implementation for each control and view the overall risk for the role.
-#         4. **View Risks**: The tool calculates and displays qualitative risks based on control implementation and threat data.
-#         """)
-#         st.sidebar.write("---")
-#         st.sidebar.write("For more information or feedback, contact us at: mmollaeefar@fbk.eu")
-
-# ##-----------------------------------------
-
+# ##---------------------------------------
 
 # Load the JSON files
-file_path1 = "C:\\Users\\mmoll\\Desktop\\Py\\Threat-Model\\random-coding\\dread\\threats_controls.json"
+file_path1 = os.path.join(base_path, ".files\\threats_controls.json")
 with open(file_path1, 'r') as file:
     threats_data = json.load(file)
 
-file_path2 = "C:\\Users\\mmoll\\Desktop\\Py\\Threat-Model\\random-coding\\dread\\controls_mitigations.json"
+file_path2 = os.path.join(base_path, ".files\\controls_mitigations.json")
 with open(file_path2, 'r') as file:
     controls_data = json.load(file)
 
-file_path3 = "C:\\Users\\mmoll\\Desktop\\Py\\Threat-Model\\random-coding\\dread\\controls_dread.json"
+file_path3 = os.path.join(base_path, ".files\\controls_dread.json")
 with open(file_path3, 'r') as file:
     controls_dread = json.load(file)
 
-file_path4 = "C:\\Users\\mmoll\\Desktop\\Py\\Threat-Model\\random-coding\\dread\\role_threats.json"
+file_path4 = os.path.join(base_path, ".files\\role_threats.json")
 with open(file_path4, 'r') as file:
     role_threats_data = json.load(file)
 
