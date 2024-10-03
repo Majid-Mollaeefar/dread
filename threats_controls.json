@@ -8,55 +8,64 @@
                     "Code": "C4",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.12, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C14",
                     "Overall Weights": 3,
                     "Normalized Weights": 0.14, 
-                    "Role_Responsible": ["Wallet Provider",  "All"]
+                    "Role_Responsible": ["Wallet Provider",  "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C15",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.10, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Recommended"
                 },
                 {
                     "Code": "C16",
                     "Overall Weights": 1.5,
                     "Normalized Weights": 0.07, 
-                    "Role_Responsible": [ "Issuer", "Verifier", "All"]
+                    "Role_Responsible": [ "Issuer", "Verifier", "Holder"],
+                    "Implementation Choice": "Recommended"
                 },
                 {
                     "Code": "C18",
                     "Overall Weights": 3,
                     "Normalized Weights": 0.14, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C21",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.10, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C22",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.12, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C1",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.12, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Temp"
                 },
                 {
                     "Code": "C25",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.10, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Temp"
                 }
             ]
         },
@@ -68,31 +77,36 @@
                     "Code": "C3",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.22, 
-                    "Role_Responsible": ["Issuer", "All"]
+                    "Role_Responsible": ["Issuer", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C16",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.17, 
-                    "Role_Responsible": ["Issuer", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Verifier", "Holder"],
+                    "Implementation Choice": "Recommended"
                 },
                 {
                     "Code": "C22",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.22, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C1",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.22, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Temp"
                 },
                 {
                     "Code": "C25",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.17, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Temp"
                 }
             ]
         },
@@ -104,19 +118,22 @@
                     "Code": "C2",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.36, 
-                    "Role_Responsible": ["Issuer", "All"]
+                    "Role_Responsible": ["Issuer", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C1",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.36, 
-                    "Role_Responsible": ["Issuer", "All"]
+                    "Role_Responsible": ["Issuer", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C25",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.29, 
-                    "Role_Responsible": ["Issuer", "All"]
+                    "Role_Responsible": ["Issuer", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 }
             ]
         },
@@ -128,37 +145,43 @@
                     "Code": "C24",
                     "Overall Weights": 3,
                     "Normalized Weights": 0.21, 
-                    "Role_Responsible": ["Verifier", "All"]
+                    "Role_Responsible": ["Verifier", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C9",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.17, 
-                    "Role_Responsible": ["Issuer", "All"]
+                    "Role_Responsible": ["Issuer", "Holder"],
+                    "Implementation Choice": "Optional"
                 },
                 {
                     "Code": "C32",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.17, 
-                    "Role_Responsible": ["Issuer", "All"]
+                    "Role_Responsible": ["Issuer", "Holder"],
+                    "Implementation Choice": "Recommended"
                 },
                 {
                     "Code": "C11",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.14, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Holder"],
+                    "Implementation Choice": "Conditional, Mandatory for long-lived credentials"
                 },
                 {
                     "Code": "C1",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.17, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Recommended"
                 },
                 {
                     "Code": "C25",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.14, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Recommended"
                 }
             ]
         },
@@ -170,25 +193,15 @@
                     "Code": "C11",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.22, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "All"]
-                },
-                {
-                    "Code": "C1",
-                    "Overall Weights": 2.5,
-                    "Normalized Weights": 0.28, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
-                },
-                {
-                    "Code": "C25",
-                    "Overall Weights": 2,
-                    "Normalized Weights": 0.22, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C19",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.28, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 }
             ]
         },
@@ -200,25 +213,29 @@
                     "Code": "C4",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.25, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C11",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.20, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C21",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.25, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C27",
                     "Overall Weights": 3,
                     "Normalized Weights": 0.30, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Recommended"
                 }
             ]
         },
@@ -230,19 +247,8 @@
                     "Code": "C4",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.36, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
-                },
-                {
-                    "Code": "C1",
-                    "Overall Weights": 2.5,
-                    "Normalized Weights": 0.36, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
-                },
-                {
-                    "Code": "C25",
-                    "Overall Weights": 2,
-                    "Normalized Weights": 0.29, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 }
             ]
         },
@@ -254,19 +260,22 @@
                     "Code": "C26",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.36, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Verifier", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C1",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.36, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Recommended"
                 },
                 {
                     "Code": "C25",
                     "Overall Weights": 2,
                     "Normalized Weights": 0.29, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Recommended"
                 }
             ]
         },
@@ -278,19 +287,22 @@
                     "Code": "C33",
                     "Overall Weights": 3,
                     "Normalized Weights": 0.35, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C1",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.29, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Recommended"
                 },
                 {
                     "Code": "C25",
                     "Overall Weights": 3,
                     "Normalized Weights": 0.35, 
-                    "Role_Responsible": ["Wallet Provider", "All"]
+                    "Role_Responsible": ["Wallet Provider", "Holder"],
+                    "Implementation Choice": "Recommended"
                 }
             ]
         },
@@ -302,13 +314,15 @@
                     "Code": "C34",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.26, 
-                    "Role_Responsible": ["Issuer", "Wallet Provider", "All"]
+                    "Role_Responsible": ["Issuer", "Wallet Provider", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 },
                 {
                     "Code": "C35",
                     "Overall Weights": 2.5,
                     "Normalized Weights": 0.26, 
-                    "Role_Responsible": ["Issuer", "Verifier", "All"]
+                    "Role_Responsible": ["Issuer", "Verifier", "Holder"],
+                    "Implementation Choice": "Mandatory"
                 }
             ]
         }

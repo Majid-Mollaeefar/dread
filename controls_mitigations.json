@@ -44,9 +44,7 @@
         },
         "C7": {
             "Mitigation Level": {
-                "Basic": "Credential validation following the best practices that are provided in the relevant standards (e.g., OpenID for Verifiable Credential Presentations)",
-                "Intermediate": "Credential validation following the best practices that are provided in the relevant standards (e.g., OpenID for Verifiable Credential Presentations)",
-                "Advanced": "Credential validation following the best practices that are provided in the relevant standards (e.g., OpenID for Verifiable Credential Presentations)"
+                "Yes": "Credential validation following the best practices that are provided in the relevant standards (e.g., OpenID for Verifiable Credential Presentations)"
             }
         },
         "C8": {
@@ -58,9 +56,7 @@
         },
         "C9": {
             "Mitigation Level": {
-                "Basic": "Ephemeral credentials with short-lived validity periods.",
-                "Intermediate": "Ephemeral credentials with short-lived validity periods.",
-                "Advanced": "Ephemeral credentials with short-lived validity periods."
+                "Yes": "Ephemeral credentials with short-lived validity periods."
             }
         },
         "C10": {
@@ -86,9 +82,7 @@
         },
         "C13": {
             "Mitigation Level": {
-                "Basic": "Real-time push notifications via mobile app with a dedicated tab in the app to further check the credential activity.",
-                "Intermediate": "Real-time push notifications via mobile app with a dedicated tab in the app to further check the credential activity.",
-                "Advanced": "Real-time push notifications via mobile app with a dedicated tab in the app to further check the credential activity."
+                "Yes": "Real-time push notifications via mobile app with a dedicated tab in the app to further check the credential activity."
             }
         },
         "C14": {
@@ -100,9 +94,7 @@
         },
         "C15": {
             "Mitigation Level": {
-                "Basic": "Basic feedback to users without exposing any sensitive information.",
-                "Intermediate": "Basic feedback to users without exposing any sensitive information.",
-                "Advanced": "Basic feedback to users without exposing any sensitive information."
+                "Yes": "Basic feedback to users without exposing any sensitive information."
             }
         },
         "C16": {
@@ -156,9 +148,7 @@
         },
         "C23": {
             "Mitigation Level": {
-                "Basic": "Request response verification following the best practices (e.g., signature and data format) and the relevant standards.",
-                "Intermediate": "Request response verification following the best practices (e.g., signature and data format) and the relevant standards.",
-                "Advanced": "Request response verification following the best practices (e.g., signature and data format) and the relevant standards."
+                "Yes": "Request response verification following the best practices (e.g., signature and data format) and the relevant standards."
             }
         },
         "C24": {
@@ -205,9 +195,7 @@
         },
         "C30": {
             "Mitigation Level": {
-                "Basic": "Secure data exchange protocol implementation following the best practices defined in the standards.",
-                "Intermediate": "Secure data exchange protocol implementation following the best practices defined in the standards.",
-                "Advanced": "Secure data exchange protocol implementation following the best practices defined in the standards."
+                "Yes": "Secure data exchange protocol implementation following the best practices defined in the standards."
             }
         },
         "C31": {
@@ -226,9 +214,7 @@
         },
         "C33": {
             "Mitigation Level": {
-                "Basic": "Implementation of Robust consent mechanism where users must explicitly agree to any data access or transaction.",
-                "Intermediate": "Implementation of Robust consent mechanism where users must explicitly agree to any data access or transaction.",
-                "Advanced": "Implementation of Robust consent mechanism where users must explicitly agree to any data access or transaction."
+                "Yes": "Implementation of Robust consent mechanism where users must explicitly agree to any data access or transaction."
             }
         },
         "C34": {
@@ -240,9 +226,7 @@
         },
         "C35": {
             "Mitigation Level": {
-                "Basic": "Implementation of data deletion policy based on the eIDAS regulation.",
-                "Intermediate": "Implementation of data deletion policy based on the eIDAS regulation.",
-                "Advanced": "Implementation of data deletion policy based on the eIDAS regulation."
+                "Yes": "Implementation of data deletion policy based on the eIDAS regulation."
             }
         }
     }

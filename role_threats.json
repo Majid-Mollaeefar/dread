@@ -1,167 +1,166 @@
 {
-    "Roles": 
+  "Roles": 
+  {
+    "Issuer": 
     {
-      "Issuer": 
-      {
-        "threats": [
-          {
-            "Code": "T1",
-            "Name": "Theft of sensitive information",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 1.67
-          },
-          {
-            "Code": "T2",
-            "Name": "Entity impersonation",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 1.67
-          },
-          {
-            "Code": "T3",
-            "Name": "Issuer Abuse",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 4.3
-          }
-        ]
-      },
-      "Verifier": {
-        "threats": [
-          {
-            "Code": "T1",
-            "Name": "Theft of sensitive information",
-            "Overall-Impact": 3,
-            "Overall-Likelihood": 2.3
-          },
-          {
-            "Code": "T2",
-            "Name": "Entity impersonation",
-            "Overall-Impact": 4,
-            "Overall-Likelihood": 2.3
-          },
-          {
-            "Code": "T4",
-            "Name": "Use of a stolen credential",
-            "Overall-Impact": 1,
-            "Overall-Likelihood": 3
-          },
-          {
-            "Code": "T8",
-            "Name": "Data minimization violation",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 3
-          },
-          {
-            "Code": "T10",
-            "Name": "Illegitimate credential/sensitive data storage",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 4.3
-          }
-        ]
-      },
-      "Wallet Provider": {
-        "threats": [
-          {
-            "Code": "T1",
-            "Name": "Theft of sensitive information",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 1.67
-          },
-          {
-            "Code": "T2",
-            "Name": "Entity impersonation",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 1.67
-          },
-          {
-            "Code": "T5",
-            "Name": "Wallet Compromise",
-            "Overall-Impact": 4,
-            "Overall-Likelihood": 3
-          },
-          {
-            "Code": "T7",
-            "Name": "Cryptographic key/credential leakage",
-            "Overall-Impact": 4,
-            "Overall-Likelihood": 4.3
-          },
-          {
-            "Code": "T8",
-            "Name": "Data minimization violation",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 2.3
-          },
-          {
-            "Code": "T9",
-            "Name": "Exploit faulty user consent mechanism",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 3.6
-           }
-        ]
-      },
-      "All":{
-        "threats": [
-          {
-            "Code": "T1",
-            "Name": "Theft of sensitive information",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 3
-          },
-          {
-            "Code": "T2",
-            "Name": "Entity impersonation",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 3
-          },
-          {
-            "Code": "T3",
-            "Name": "Issuer Abuse",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 1.67
-          },
-          {
-            "Code": "T4",
-            "Name": "Use of a stolen credential",
-            "Overall-Impact": 1,
-            "Overall-Likelihood": 3.6
-          },
-          {
-            "Code": "T5",
-            "Name": "Wallet Compromise",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 3
-          },
-          {
-            "Code": "T6",
-            "Name": "Device Loss",
-            "Overall-Impact": 1,
-            "Overall-Likelihood": 4.3
-          },
-          {
-            "Code": "T7",
-            "Name": "Cryptographic key/credential leakage",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 2.3
-          },
-          {
-            "Code": "T8",
-            "Name": "Data minimization violation",
-            "Overall-Impact": 5,
-            "Overall-Likelihood": 4.3
-          },
-          {
-            "Code": "T9",
-            "Name": "Exploit faulty user consent mechanism",
-            "Overall-Impact": 4,
-            "Overall-Likelihood": 4.3
-           },
-           {
-            "Code": "T10",
-            "Name": "Illegitimate credential/sensitive data storage",
-            "Overall-Impact": 4,
-            "Overall-Likelihood": 4.3
-          }
-        ]
-      }
+      "threats": [
+        {
+          "Code": "T1",
+          "Name": "Theft of sensitive information",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 1.67
+        },
+        {
+          "Code": "T2",
+          "Name": "Entity impersonation",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 1.67
+        },
+        {
+          "Code": "T3",
+          "Name": "Issuer Abuse",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 4.3
+        }
+      ]
+    },
+    "Verifier": {
+      "threats": [
+        {
+          "Code": "T1",
+          "Name": "Theft of sensitive information",
+          "Overall-Impact": 3,
+          "Overall-Likelihood": 2.3
+        },
+        {
+          "Code": "T2",
+          "Name": "Entity impersonation",
+          "Overall-Impact": 4,
+          "Overall-Likelihood": 2.3
+        },
+        {
+          "Code": "T4",
+          "Name": "Use of a stolen credential",
+          "Overall-Impact": 1,
+          "Overall-Likelihood": 3
+        },
+        {
+          "Code": "T8",
+          "Name": "Data minimization violation",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 3
+        },
+        {
+          "Code": "T10",
+          "Name": "Illegitimate credential/sensitive data storage",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 4.3
+        }
+      ]
+    },
+    "Wallet Provider": {
+      "threats": [
+        {
+          "Code": "T1",
+          "Name": "Theft of sensitive information",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 1.67
+        },
+        {
+          "Code": "T2",
+          "Name": "Entity impersonation",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 1.67
+        },
+        {
+          "Code": "T5",
+          "Name": "Wallet Compromise",
+          "Overall-Impact": 4,
+          "Overall-Likelihood": 3
+        },
+        {
+          "Code": "T7",
+          "Name": "Cryptographic key/credential leakage",
+          "Overall-Impact": 4,
+          "Overall-Likelihood": 4.3
+        },
+        {
+          "Code": "T8",
+          "Name": "Data minimization violation",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 2.3
+        },
+        {
+          "Code": "T9",
+          "Name": "Exploit faulty user consent mechanism",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 3.6
+         }
+      ]
+    },
+    "Holder":{
+      "threats": [
+        {
+          "Code": "T1",
+          "Name": "Theft of sensitive information",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 3
+        },
+        {
+          "Code": "T2",
+          "Name": "Entity impersonation",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 3
+        },
+        {
+          "Code": "T3",
+          "Name": "Issuer Abuse",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 1.67
+        },
+        {
+          "Code": "T4",
+          "Name": "Use of a stolen credential",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 3.6
+        },
+        {
+          "Code": "T5",
+          "Name": "Wallet Compromise",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 3
+        },
+        {
+          "Code": "T6",
+          "Name": "Device Loss",
+          "Overall-Impact": 1,
+          "Overall-Likelihood": 4.3
+        },
+        {
+          "Code": "T7",
+          "Name": "Cryptographic key/credential leakage",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 2.3
+        },
+        {
+          "Code": "T8",
+          "Name": "Data minimization violation",
+          "Overall-Impact": 5,
+          "Overall-Likelihood": 4.3
+        },
+        {
+          "Code": "T9",
+          "Name": "Exploit faulty user consent mechanism",
+          "Overall-Impact": 4,
+          "Overall-Likelihood": 4.3
+         },
+         {
+          "Code": "T10",
+          "Name": "Illegitimate credential/sensitive data storage",
+          "Overall-Impact": 4,
+          "Overall-Likelihood": 4.3
+        }
+      ]
     }
+  }
 }
-  
