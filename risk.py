@@ -3,7 +3,9 @@ import json
 import pandas as pd
 import os
 # ##---------Config--------------------------
-st.set_page_config(page_title="DIWAR", layout="wide", initial_sidebar_state="expanded")
+base_path = os.getcwd()
+icon_path = os.path.join(base_path, "icon.png")
+st.set_page_config(page_title="DIWAR", layout="wide", initial_sidebar_state="expanded", page_icon=icon_path)
 st.markdown("""
     <style>
         .reportview-container {
@@ -37,7 +39,7 @@ def render_header(header_index):
         st.sidebar.markdown(f'<h2 class="header-{header_index}">{header_text}</h2>', unsafe_allow_html=True)
 # ##-----Sidebar----------------------------
 # st.sidebar.title("Digital Identity Wallet Analysis and Risk assessment")
-base_path = os.getcwd()
+# base_path = os.getcwd()
 logo_path = os.path.join(base_path, "d.png")
 headers = [
     ("About", "#f3b61f"),
