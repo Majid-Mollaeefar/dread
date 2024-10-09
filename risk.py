@@ -77,6 +77,21 @@ def calculate_mitigation_sums(group, factors):
                 mitigation_sums[factor] += weight * mitigation_level
     return mitigation_sums
 
+# Function to handle the special feature for each control
+def handle_special_control(control_code, threats_data):
+    temp_list = []
+    for threat in threats_data['Threats']:
+        for control in threat['Controls']:
+            if control['Code'] == control_code:
+                for role in control['Role_Responsible']:
+                    if role not in temp_list:
+                        temp_list.append(role)
+
+    if "Holder" in temp_list:
+        temp_list.remove("Holder")
+
+    return temp_list
+
 # Function to display control mitigation level selection
 def display_control_mitigation_selection(threat_code, threats_data, selected_roles, controls_data):
     threat_controls = next((ctrl for ctrl in threats_data['Threats'] if ctrl['Code'] == threat_code), None)
@@ -111,18 +126,33 @@ def display_control_mitigation_selection(threat_code, threats_data, selected_rol
                         f"**Responsible role(s):** <span style='color:#f58f2f'> {', '.join(responsible_roles)}</span>",
                         unsafe_allow_html=True,
                     )
+                # #Showing the selected mitigation level as info.
+                # selected_level = st.radio(
+                #     f"What is the level of implementation of the control {control_code}?",
+                #     mitigation_levels,
+                #     key=f"{threat_code}_{control_code}"
+                # )
 
+                # if selected_level != "N/A":
+                #     level_description = control_name.get(selected_level, "Description not available.")
+                #     st.write(f"**Selected mitigation level:** {level_description}")
+
+                # user_responses[control_code] = MITIGATION_LEVELS_MAPPING[selected_level]
+                   # Create a list of tuples with mitigation levels and their descriptions
+                mitigation_options = [(level, control_name.get(level, "Description not available.")) if level != "N/A" else (level, "") for level in mitigation_levels]
+
+                # Display the radio buttons with mitigation levels and descriptions
                 selected_level = st.radio(
                     f"What is the level of implementation of the control {control_code}?",
-                    mitigation_levels,
+                    options=mitigation_options,
+                    format_func=lambda x: f"{x[0]}: {x[1]}" if x[1] else x[0],
                     key=f"{threat_code}_{control_code}"
                 )
 
-                if selected_level != "N/A":
-                    level_description = control_name.get(selected_level, "Description not available.")
-                    st.write(f"**Selected mitigation level:** {level_description}")
+                if selected_level[0] != "N/A":
+                    st.write(f"**Selected mitigation level:** {selected_level[1]}")
 
-                user_responses[control_code] = MITIGATION_LEVELS_MAPPING[selected_level]
+                user_responses[control_code] = MITIGATION_LEVELS_MAPPING[selected_level[0]]
 
         return user_responses
     else:
@@ -133,10 +163,11 @@ def display_control_mitigation_selection(threat_code, threats_data, selected_rol
 def perform_risk_assessment(selected_threats, user_responses, threats_data, controls_dread, role_threats_data, selected_roles):
     results = {
         'Threat': [],
-        'Impact Residue': [],
-        'Likelihood Residue': [],
+        'Selected Controls': [],
+        'Impact': [],
+        'Likelihood': [],
         'Qualitative Risk': [],
-        'Controls': [] 
+        # 'Controls': [] 
     }
 
     for threat_code, threat_name in selected_threats:
@@ -149,13 +180,18 @@ def perform_risk_assessment(selected_threats, user_responses, threats_data, cont
             ]
 
             group_data = []
-            control_codes = []  # To store control codes for the Controls column
-
+            # control_codes = []  # To store control codes for the Controls column
+            selected_controls = []
             for control in filtered_controls:
                 control_code = control['Code']
                 weight = control['Normalized Weights']
                 mitigation_level = user_responses.get(control_code, 0)  # Default to 0 if no response
-
+                # Convert selected level back to readable string (e.g., 1 -> Basic)
+                mitigation_level_str = next(
+                    (key for key, value in MITIGATION_LEVELS_MAPPING.items() if value == mitigation_level),
+                    "N/A"
+                )
+                selected_controls.append(f"{control_code}={mitigation_level_str}")  # Add control and selected level
                 control_details = next((ctrl for ctrl in controls_dread['Controls'] if ctrl['Code'] == control_code), None)
                 if control_details:
                     group_data.append({
@@ -168,7 +204,7 @@ def perform_risk_assessment(selected_threats, user_responses, threats_data, cont
                         'D1': control_details['D1']
                     })
 
-                control_codes.append(control_code)  # Collect control codes
+                # control_codes.append(control_code)  # Collect control codes
 
             max_sums = calculate_max_sums(group_data, ['D', 'R', 'E', 'A', 'D1'])
             max_sum_impact_mitigation = max_sums['D'] + max_sums['A']
@@ -193,10 +229,11 @@ def perform_risk_assessment(selected_threats, user_responses, threats_data, cont
             qualitative_risk = "No Risk" if impact_residue == 0 or likelihood_residue == 0 else qualitative_risk_matrix.get((impact_level, likelihood_level))
 
             results['Threat'].append(threat_name)
-            results['Impact Residue'].append(impact_risk)
-            results['Likelihood Residue'].append(likelihood_risk)
+            results['Selected Controls'].append(", ".join(selected_controls))
+            results['Impact'].append(impact_risk)
+            results['Likelihood'].append(likelihood_risk)
             results['Qualitative Risk'].append(qualitative_risk)
-            results['Controls'].append(", ".join(control_codes))  
+            # results['Controls'].append(", ".join(control_codes))  
 
 
     results_df = pd.DataFrame(results)
@@ -214,23 +251,6 @@ def perform_risk_assessment(selected_threats, user_responses, threats_data, cont
     styled_df = results_df.style.map(color_code_risk, subset=["Qualitative Risk"])
 
     return styled_df, results
-
-# Function to handle the special feature for each control
-def handle_special_control(control_code, threats_data):
-    temp_list = []
-    for threat in threats_data['Threats']:
-        for control in threat['Controls']:
-            if control['Code'] == control_code:
-                for role in control['Role_Responsible']:
-                    if role not in temp_list:
-                        temp_list.append(role)
-
-    if "Holder" in temp_list:
-        temp_list.remove("Holder")
-
-    return temp_list
-
-
 
 # Define tabs
 tab1, tab2 = st.tabs(["Risk Assessment", "Security Control View"])
@@ -298,21 +318,33 @@ with tab1:
                             f"**Responsible entity(s):** <span style='color:#f58f2f'> {', '.join(responsible_roles)}</span>",
                             unsafe_allow_html=True,
                         )
+                    # Create a list of tuples with mitigation levels and their descriptions
+                    mitigation_options = [(level, controls_data['Controls'].get(control_code, {}).get('Mitigation Level', {}).get(level, "Description not available.")) if level != "N/A" else (level, "") for level in mitigation_levels]
 
+                    # Display the radio buttons with mitigation levels and descriptions
                     selected_level = st.radio(
                         f"What is the level of implementation of the control {control_code}?",
-                        mitigation_levels,
+                        options=mitigation_options,
+                        format_func=lambda x: f"{x[0]}: {x[1]}" if x[1] else x[0],
                         key=f"shared_{control_code}"
                     )
+                    
+                    user_responses[control_code] = MITIGATION_LEVELS_MAPPING[selected_level[0]]
 
-                    if selected_level != "N/A":
-                        level_description = controls_data['Controls'].get(control_code, {}).get('Mitigation Level', {}).get(selected_level, "Description not available.")
-                        st.markdown(
-                            f"**Selected mitigation level:** <span style='color:#f58f2f'> {level_description}</span>",
-                            unsafe_allow_html=True,
-                        )
+                    # selected_level = st.radio(
+                    #     f"What is the level of implementation of the control {control_code}?",
+                    #     mitigation_levels,
+                    #     key=f"shared_{control_code}"
+                    # )
 
-                    user_responses[control_code] = MITIGATION_LEVELS_MAPPING[selected_level]
+                    # if selected_level != "N/A":
+                    #     level_description = controls_data['Controls'].get(control_code, {}).get('Mitigation Level', {}).get(selected_level, "Description not available.")
+                    #     st.markdown(
+                    #         f"**Selected mitigation level:** <span style='color:#f58f2f'> {level_description}</span>",
+                    #         unsafe_allow_html=True,
+                    #     )
+
+                    # user_responses[control_code] = MITIGATION_LEVELS_MAPPING[selected_level]
 
             # Step 3: Perform Risk Assessment
             if st.button("Risk Assessment"):
