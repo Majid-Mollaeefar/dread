@@ -37,7 +37,7 @@ def config():
             header_text, _ = headers[header_index]
             st.sidebar.markdown(f'<h2 class="header-{header_index}">{header_text}</h2>', unsafe_allow_html=True)
     # ##-----Sidebar----------------------------
-    logo_path = os.path.join(base_path, "d.png")
+    logo_path = os.path.join(base_path, "logo.png")
     headers = [
         ("About", "#f3b61f"),
         ("How It Works", "#f3b61f")
